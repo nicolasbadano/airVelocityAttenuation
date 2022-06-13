@@ -32,6 +32,10 @@ with $\alpha_t$ being the alpha threshold, bellow which the attenuation is appli
 * Always ensure that the sink term doesn't affect the problem solution.
 * Artifially limiting the air velocity can lead to increased velocity gradients near the free surface, and hence additional turbulence production in that region.
 
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
 ## Author
 
 Nicolás Diego Badano (https://www.linkedin.com/in/nicolas-diego-badano/)
