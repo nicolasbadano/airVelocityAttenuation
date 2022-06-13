@@ -10,7 +10,7 @@ $$
 \frac{\partial \rho U}{\partial t}+\nabla \cdot \left( \rho U \otimes U \right) -\nabla \cdot \left(2 \rho \nu D \right) + \nabla R_d = -\nabla p + \rho g + \sigma \kappa \nabla \alpha - A_r \rho U  f(\alpha)
 $$
 
-where $A_r$ is the attenuation rate (1/s) and:
+where $A_r$ is the attenuation rate (1/s) and $f$ is a function which has a value of zero in the water fraction, and one in the air fraction:
 
 $$
 f(\alpha) = \max(\min(\frac{\alpha_t - \alpha}{\alpha_t}, 1), 0)
@@ -22,6 +22,10 @@ with $\alpha_t$ being the alpha threshold, bellow which the attenuation is appli
 
 * Just copy the `fvOption` file into the `constant` folder of your simulation.
 * The attenuation rate and alpha threshold con be easily changed in the source code.
+
+## Example results
+
+![example](https://github.com/esteldunedain/airVelocityAttenuation/blob/master/images/exampleWeir.png?raw=true)
 
 ## Warning
 
