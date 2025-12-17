@@ -10,12 +10,11 @@ FoamFile
 
 airVelocityAttenuation
 {
-    type vectorCodedSource;
-    active true;
-    selectionMode all;
-
-    fields(U);
-    name codedSource;
+    type            vectorCodedSource;
+    active          true;
+    selectionMode   all;
+    fields          (U);
+    name            codedSource;
 
     codeInclude
     #{
